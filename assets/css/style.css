@@ -1880,3 +1880,167 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Gradient Background Enhancements */
+body, .sidebar, article, .navbar {
+  background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+}
+
+/* Improved Shadows for Depth */
+.sidebar, article, .icon-box, .content-card, .modal-container .testimonials-modal {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Smooth Transitions for Interactive Elements */
+.icon-box, .info_more-btn, .filter-item button, .project-item > a, .blog-banner-box img, .form-btn {
+  transition: all 0.3s ease;
+}
+
+/* Typography Enhancements for Readability and Aesthetic */
+body, .h2, .h3, .h4, .h5, .article-title, .service-item-title, .project-title, .blog-item-title, .contact-title {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+/* Navbar Styling for Better Visual Separation */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+/* Button and Link Enhancements for Interactivity */
+.info_more-btn:hover, .filter-item button.active, .form-btn:hover {
+  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: #ffffff;
+}
+
+/* Adjustments for Form Elements for Consistency */
+.form-input, textarea.form-input {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design Adjustments */
+@media (min-width: 768px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .sidebar {
+    grid-column: 1 / 2;
+  }
+
+  .main-content > * {
+    grid-column: 5 / 5;
+  }
+}
+
+.milestone-content {
+  color: #fff; /* Adjust based on your color scheme */
+  font-size: 1rem; /* Adjust based on your preference */
+  line-height: 1.6; /* Improves readability */
+  padding: 20px; /* Adds some padding around the text */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 10px; /* Rounds the corners of the background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Adds subtle shadow for depth */
+  margin-bottom: 20px; /* Adds margin to the bottom */
+}
+
+.milestone-list {
+  list-style: inside; /* Positions the bullet inside the content area */
+  padding: 20px; /* Adds padding */
+}
+
+.milestone-list li {
+  margin-bottom: 10px; /* Adds space between list items */
+  text-indent: -0.5em; /* Aligns text nicely with the bullet */
+}
+
+.milestone-list strong {
+  color: #FDBA74; /* Highlight color for milestone titles */
+}
+
+/* General Styles for Headings */
+.article-title {
+  text-align: left; /* Aligns titles to the left */
+  color: #FFD700; /* Gold color for headings */
+  padding-left: 15px; /* Ensures headings are not too close to the edge */
+}
+
+/* About Section Enhancements */
+.about-text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ADE8F4; /* Light blue for text */
+  margin-top: 20px;
+  padding: 0 15px; /* Padding for text */
+}
+
+.service-title {
+  color: #FFD700; /* Gold color for service title */
+  margin-bottom: 20px;
+  padding-left: 0; /* Adjusts padding for alignment */
+}
+
+.service-item {
+  text-align: center; /* Centers service items content */
+  max-width: 30%;
+  margin: 10px auto; /* Center service items and provides spacing */
+  color: #ADE8F4; /* Light blue for text */
+}
+
+.service-item h4 {
+  color: #FFD700; /* Gold color for subtitles */
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Portfolio Section Enhancements */
+.portfolio .article-title {
+  text-align: left; /* Aligns "Assignments" title to the left */
+  padding-left: 15px; /* Adds padding for left alignment */
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds shadow for depth */
+}
+
+.project-title {
+  text-align: center; /* Centers project titles */
+  margin-top: 15px;
+}
+
+.project-img {
+  border-radius: 8px; /* Rounded corners for project images */
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-img img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+
