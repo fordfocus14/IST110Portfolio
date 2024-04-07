@@ -1966,6 +1966,35 @@ body, .h2, .h3, .h4, .h5, .article-title, .service-item-title, .project-title, .
   color: #FDBA74; /* Highlight color for milestone titles */
 }
 
+.discussion-content {
+  color: #fff; /* Adjust based on your color scheme */
+  font-size: 1rem; /* Adjust based on your preference */
+  line-height: 1.6; /* Improves readability */
+  padding: 20px; /* Adds some padding around the text */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 10px; /* Rounds the corners of the background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Adds subtle shadow for depth */
+  margin-bottom: 20px; /* Adds margin to the bottom */
+  
+}
+
+.discussion-list {
+  list-style: inside; /* Positions the bullet inside the content area */
+  padding: 20px; /* Adds padding */
+}
+
+.discussion-list li {
+  margin-bottom: 10px; /* Adds space between list items */
+  text-indent: -0.5em; /* Aligns text nicely with the bullet */
+}
+
+.discussion-list li a {
+  color: #FDBA74;
+ }  
+
+.discussion-list strong {
+  color: #FDBA74; /* Highlight color for milestone titles */
+}
 /* General Styles for Headings */
 .article-title {
   text-align: left; /* Aligns titles to the left */
@@ -2044,3 +2073,11 @@ body, .h2, .h3, .h4, .h5, .article-title, .service-item-title, .project-title, .
 }
 
 
+.portfolio-search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
