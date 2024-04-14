@@ -158,26 +158,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  function filterProjects() {
-    const input = document.getElementById('portfolioSearchInput');
-    const filter = input.value.toUpperCase();
-    const projects = document.querySelectorAll('.project-item');
-
-    projects.forEach(project => {
-      const title = project.querySelector('.project-title');
-      if (title.innerText.toUpperCase().includes(filter)) {
-        project.style.visibility = "visible";
-        project.style.height = "auto"; 
-        project.style.margin = ""; 
-      } else {
-        project.style.visibility = "hidden";
-        project.style.height = "0";
-        project.style.margin = "0"; 
-      }
-    });
-  }
-
-  document.getElementById('portfolioSearchInput').addEventListener('keyup', filterProjects);
-});
